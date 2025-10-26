@@ -1,12 +1,44 @@
-# Glamified Solutions — Professional Site (v4)
+# Glamified Solutions
 
-- Fully designed light-theme site with animations
-- Auto-integrated client logos via company domains (no uploads needed)
-- Pages: Home, Services, Projects, About, Recruitment, Contact
-- Inline comments across HTML/CSS/JS for clarity
-- Hostinger-ready (drop-in)
+Production-ready, multi-page website built with React + TypeScript + Vite, Tailwind CSS, Framer Motion, shadcn-style UI primitives, lucide-react icons, and react-router.
 
-## Deploy
-1. Upload `glamified-site-v4-pro.zip` to `public_html/` and Extract.
-2. Ensure `public_html/index.html` exists.
-3. Update `contact.php` `$to` to your domain inbox.
+## Quick Start
+
+```bash
+npm i
+npm run dev
+# build
+npm run build
+npm run preview
+```
+
+### Environment
+
+Create a `.env` file if you want live contact form submissions:
+
+```
+VITE_FORMSPREE_ID=YOUR_FORMSPREE_FORM_ID
+```
+
+### Deploy to GitHub Pages
+
+1. Set `base` in `vite.config.ts` to your repo subpath (e.g., `/glamified-solutions/`).
+2. `npm run deploy`
+
+### Accessibility & Performance
+
+- Keyboard accessible, focus-visible rings, semantic markup.
+- Images are lazy-loaded, routes are code-split, and critical paths are optimized.
+- Respects `prefers-reduced-motion`.
+
+### SEO
+
+- Per-page `<title>`/description.
+- OpenGraph/Twitter meta.
+- `npm run generate:sitemap` creates `public/sitemap.xml`.
+- `public/robots.txt` included.
+- JSON-LD Organization and Breadcrumbs injected via `react-helmet-async`.
+
+### Credits
+
+Royalty-free imagery from Unsplash with on-page attributions via source links.
