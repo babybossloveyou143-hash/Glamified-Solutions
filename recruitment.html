@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character set + responsive viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description for SEO -->
+  <title>Glamified Solutions — Smart IT & AI Solutions</title>
+  <meta name="description" content="Smart IT & AI solutions for the modern enterprise. We design, build, and scale digital products — and the teams behind them.">
+
+  <!-- Web font & icon set (CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css"/>
+
+  <!-- App styles & main script -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/clients.js"></script>  <!-- Holds client domain list -->
+  <script defer src="assets/js/main.js"></script>     <!-- Navigation, animations, logo loader -->
+
+</head>
+<body class="light">
+  <!--
+    Sticky header with brand and primary navigation.
+    For mobile, the hamburger toggles the menu (handled in main.js).
+  -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html"><span>Glamified Solutions</span></a>
+      <nav class="nav" id="nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="recruitment.html">Recruitment</a>
+        <a href="contact.html" class="btn btn--sm">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+<main class="container page">
+  <!-- Recruitment: process, specialties, differentiators -->
+  <h1>Recruitment & Hiring</h1>
+  <section class="lead">
+    <h2>Your Partner for Building Exceptional Tech Teams.</h2>
+    <p>From startups to enterprises, we help you hire smarter, faster, and globally.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>Our Process</h2>
+    <ol class="process">
+      <li>Discovery</li>
+      <li>Screening</li>
+      <li>Shortlisting</li>
+      <li>Interview Coordination</li>
+      <li>Onboarding</li>
+    </ol>
+  </section>
+
+  <section class="reveal">
+    <h2>Talent Specialties</h2>
+    <div class="chips">
+      <span>Software Engineers (React, Node, Python)</span>
+      <span>AI/ML Engineers</span>
+      <span>DevOps & Cloud Architects</span>
+      <span>Product & Project Managers</span>
+      <span>UI/UX Designers</span>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Why Glamified Solutions</h2>
+    <ul class="checklist">
+      <li>Pre-vetted candidates</li>
+      <li>Domain-specific hiring</li>
+      <li>Dedicated account managers</li>
+      <li>Global reach & fast turnaround</li>
+    </ul>
+  </section>
+
+  <div class="center">
+    <a class="btn" href="contact.html"><i class="ti ti-user-plus"></i> Request Talent</a>
+  </div>
+</main>
+  <!--
+    Footer with quick links and contact. The year is injected by JS.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-row"><strong>Glamified Solutions</strong></div>
+        <p>Modern IT & AI solutions. Global delivery. Real outcomes.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="services.html#ai-ml">AI & ML</a></li>
+          <li><a href="services.html#mvp">MVP Development</li>
+          <li><a href="services.html#product">Product Development</a></li>
+          <li><a href="services.html#it">IT Services</a></li>
+          <li><a href="services.html#consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+10000000000">+1 000 000 0000</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footnote"><small>© <span id="year"></span> Glamified Solutions. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>

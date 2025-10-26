@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character set + responsive viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description for SEO -->
+  <title>Glamified Solutions — Smart IT & AI Solutions</title>
+  <meta name="description" content="Smart IT & AI solutions for the modern enterprise. We design, build, and scale digital products — and the teams behind them.">
+
+  <!-- Web font & icon set (CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css"/>
+
+  <!-- App styles & main script -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/clients.js"></script>  <!-- Holds client domain list -->
+  <script defer src="assets/js/main.js"></script>     <!-- Navigation, animations, logo loader -->
+
+</head>
+<body class="light">
+  <!--
+    Sticky header with brand and primary navigation.
+    For mobile, the hamburger toggles the menu (handled in main.js).
+  -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html"><span>Glamified Solutions</span></a>
+      <nav class="nav" id="nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="recruitment.html">Recruitment</a>
+        <a href="contact.html" class="btn btn--sm">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+<main class="container page">
+  <!-- Services page: grouped by capability areas with clear checklists -->
+  <h1>Services</h1>
+  <p class="lead">One partner for strategy, engineering, and talent — built to deliver outcomes.</p>
+
+  <div class="service-grid">
+    <section id="ai-ml" class="service card reveal">
+      <h2><i class="ti ti-brain"></i> AI & Machine Learning</h2>
+      <ul class="checklist">
+        <li>Generative AI solutions (text, code, vision)</li>
+        <li>Predictive analytics & forecasting</li>
+        <li>NLP systems, chatbots & automations</li>
+        <li>Model deployment, MLOps & monitoring</li>
+      </ul>
+    </section>
+    <section id="mvp" class="service card reveal">
+      <h2><i class="ti ti-bulb"></i> MVP Development</h2>
+      <ul class="checklist">
+        <li>Rapid discovery & product validation</li>
+        <li>UX/UI design & prototyping</li>
+        <li>From prototype to production</li>
+      </ul>
+    </section>
+    <section id="product" class="service card reveal">
+      <h2><i class="ti ti-box"></i> Product Development</h2>
+      <ul class="checklist">
+        <li>Full lifecycle engineering & maintenance</li>
+        <li>Scalable architectures & APIs</li>
+        <li>Quality engineering & observability</li>
+      </ul>
+    </section>
+    <section id="it" class="service card reveal">
+      <h2><i class="ti ti-cloud-up"></i> IT Services</h2>
+      <ul class="checklist">
+        <li>Cloud architecture & DevOps</li>
+        <li>Cybersecurity & compliance</li>
+        <li>Helpdesk, infrastructure, and support</li>
+      </ul>
+    </section>
+    <section id="consulting" class="service card reveal">
+      <h2><i class="ti ti-compass"></i> Consulting</h2>
+      <ul class="checklist">
+        <li>Technology roadmaps</li>
+        <li>Architecture design</li>
+        <li>Digital transformation strategy</li>
+      </ul>
+    </section>
+    <section id="recruitment" class="service card reveal">
+      <h2><i class="ti ti-user-search"></i> Recruitment & Hiring</h2>
+      <ul class="checklist">
+        <li>IT Talent Acquisition</li>
+        <li>Executive Search</li>
+        <li>Contract & Project-Based Hiring</li>
+        <li>Recruitment Process Outsourcing (RPO)</li>
+      </ul>
+      <a class="btn" href="recruitment.html">Discuss Your Hiring Needs</a>
+    </section>
+  </div>
+</main>
+  <!--
+    Footer with quick links and contact. The year is injected by JS.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-row"><strong>Glamified Solutions</strong></div>
+        <p>Modern IT & AI solutions. Global delivery. Real outcomes.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="services.html#ai-ml">AI & ML</a></li>
+          <li><a href="services.html#mvp">MVP Development</li>
+          <li><a href="services.html#product">Product Development</a></li>
+          <li><a href="services.html#it">IT Services</a></li>
+          <li><a href="services.html#consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+10000000000">+1 000 000 0000</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footnote"><small>© <span id="year"></span> Glamified Solutions. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>

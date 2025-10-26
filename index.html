@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character set + responsive viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description for SEO -->
+  <title>Glamified Solutions — Smart IT & AI Solutions</title>
+  <meta name="description" content="Smart IT & AI solutions for the modern enterprise. We design, build, and scale digital products — and the teams behind them.">
+
+  <!-- Web font & icon set (CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css"/>
+
+  <!-- App styles & main script -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/clients.js"></script>  <!-- Holds client domain list -->
+  <script defer src="assets/js/main.js"></script>     <!-- Navigation, animations, logo loader -->
+
+</head>
+<body class="light">
+  <!--
+    Sticky header with brand and primary navigation.
+    For mobile, the hamburger toggles the menu (handled in main.js).
+  -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html"><span>Glamified Solutions</span></a>
+      <nav class="nav" id="nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="recruitment.html">Recruitment</a>
+        <a href="contact.html" class="btn btn--sm">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <!--
+    HERO: Clear promise + two primary CTAs.
+    The image uses Unsplash (hosted) so there’s no asset setup required.
+  -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Smart IT & AI Solutions for the Modern Enterprise.</h1>
+        <p class="lead">We design, build, and scale digital products — and the teams behind them.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn"><i class="ti ti-rocket"></i> Start a Project</a>
+          <a href="recruitment.html" class="btn btn--ghost"><i class="ti ti-users"></i> Hire Tech Talent</a>
+        </div>
+
+        <!-- TRUST STRIP: Client logos (below) are auto-populated via JS -->
+        <section class="clients">
+          <div class="logo-grid" id="client-logos" aria-label="Client logos"></div>
+        </section>
+      </div>
+
+      <div class="hero-media card reveal">
+        <!-- Quick capability tags -->
+        <div class="media-stats">
+          <div><i class="ti ti-brain"></i> GenAI</div>
+          <div><i class="ti ti-cloud"></i> Cloud</div>
+          <div><i class="ti ti-shield-check"></i> SecOps</div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1280&auto=format&fit=crop" alt="Modern tech workspace">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO: Quick overview of core pillars -->
+  <section class="features container">
+    <h2>What We Do</h2>
+    <div class="cards six">
+      <article class="card reveal"><i class="ti ti-cpu"></i><h3>IT & AI Development</h3><p>Generative AI, NLP, analytics, scalable platforms.</p></article>
+      <article class="card reveal"><i class="ti ti-bulb"></i><h3>MVP Development</h3><p>Prototype to launch with UX/UI, rapid validation.</p></article>
+      <article class="card reveal"><i class="ti ti-box"></i><h3>Product Development</h3><p>Full lifecycle builds with ongoing maintenance.</p></article>
+      <article class="card reveal"><i class="ti ti-cloud-up"></i><h3>IT Services</h3><p>Cloud, DevOps, security, and 24/7 support.</p></article>
+      <article class="card reveal"><i class="ti ti-compass"></i><h3>Consulting</h3><p>Roadmaps, solution architecture, transformation.</p></article>
+      <article class="card reveal"><i class="ti ti-user-search"></i><h3>Recruitment & Hiring</h3><p>From engineers to exec search, globally.</p></article>
+    </div>
+  </section>
+
+  <!-- KPI STRIP: Social proof in numbers -->
+  <section class="metrics">
+    <div class="container metric-bar">
+      <div class="reveal"><strong>50+</strong><span>Projects Delivered</span></div>
+      <div class="reveal"><strong>30+</strong><span>Global Clients</span></div>
+      <div class="reveal"><strong>100%</strong><span>On-Time Delivery</span></div>
+    </div>
+  </section>
+
+  <!-- RECENT WORK: Three easily scannable tiles -->
+  <section class="showcase container">
+    <h2>Recent Work</h2>
+    <div class="grid-3">
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="AI dashboard"/>
+        <h3>AI / ML Use Cases</h3>
+        <p>Forecasting, NLP chat, vision, and automation.</p>
+      </article>
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop" alt="Talent team"/>
+        <h3>Talent Placement</h3>
+        <p>12 hires in 6 weeks for a fintech scale-up.</p>
+      </article>
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1555421689-43cad7100751?q=80&w=1200&auto=format&fit=crop" alt="Product app"/>
+        <h3>Product Engineering</h3>
+        <p>High-availability APIs and scalable frontends.</p>
+      </article>
+    </div>
+    <div class="center">
+      <a class="btn btn--ghost" href="projects.html"><i class="ti ti-briefcase"></i> View Case Studies</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta container">
+    <div class="cta-box card">
+      <h2>Let’s Build the Future — Together.</h2>
+      <p>Tell us your goals. We’ll design the smartest path from idea to impact.</p>
+      <a class="btn" href="contact.html">Start a Project</a>
+    </div>
+  </section>
+</main>
+  <!--
+    Footer with quick links and contact. The year is injected by JS.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-row"><strong>Glamified Solutions</strong></div>
+        <p>Modern IT & AI solutions. Global delivery. Real outcomes.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="services.html#ai-ml">AI & ML</a></li>
+          <li><a href="services.html#mvp">MVP Development</li>
+          <li><a href="services.html#product">Product Development</a></li>
+          <li><a href="services.html#it">IT Services</a></li>
+          <li><a href="services.html#consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+10000000000">+1 000 000 0000</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footnote"><small>© <span id="year"></span> Glamified Solutions. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character set + responsive viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description for SEO -->
+  <title>Glamified Solutions — Smart IT & AI Solutions</title>
+  <meta name="description" content="Smart IT & AI solutions for the modern enterprise. We design, build, and scale digital products — and the teams behind them.">
+
+  <!-- Web font & icon set (CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css"/>
+
+  <!-- App styles & main script -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/clients.js"></script>  <!-- Holds client domain list -->
+  <script defer src="assets/js/main.js"></script>     <!-- Navigation, animations, logo loader -->
+
+</head>
+<body class="light">
+  <!--
+    Sticky header with brand and primary navigation.
+    For mobile, the hamburger toggles the menu (handled in main.js).
+  -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html"><span>Glamified Solutions</span></a>
+      <nav class="nav" id="nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="recruitment.html">Recruitment</a>
+        <a href="contact.html" class="btn btn--sm">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+<main class="container page">
+  <!-- Projects page: clear, outcome-first case tiles -->
+  <h1>Projects & Case Studies</h1>
+  <p>Selected outcomes across AI/ML and talent placement.</p>
+
+  <div class="case-grid">
+    <article class="case card reveal">
+      <h3><i class="ti ti-chart-dots"></i> AI-Powered Retail Forecasting</h3>
+      <p class="muted">Industry: Retail • Tech: Python, MLflow, Cloud</p>
+      <p>Reduced stock loss by <strong>27%</strong> using ML predictive models.</p>
+    </article>
+    <article class="case card reveal">
+      <h3><i class="ti ti-users-group"></i> Talent Placement — Fintech</h3>
+      <p class="muted">Roles: React, Node, DevOps</p>
+      <p>Hired 12 engineers in 6 weeks with 92% offer acceptance.</p>
+    </article>
+    <article class="case card reveal">
+      <h3><i class="ti ti-messages"></i> NLP Chatbot for Support</h3>
+      <p class="muted">Industry: Telecom • Tech: GenAI, RAG</p>
+      <p>Deflected 38% tickets and improved CSAT by 18 points.</p>
+    </article>
+    <article class="case card reveal">
+      <h3><i class="ti ti-currency-dollar"></i> Cloud Cost Optimization</h3>
+      <p class="muted">Industry: SaaS • Tech: Kubernetes, FinOps</p>
+      <p>Lowered monthly spend by 23% without performance loss.</p>
+    </article>
+  </div>
+</main>
+  <!--
+    Footer with quick links and contact. The year is injected by JS.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-row"><strong>Glamified Solutions</strong></div>
+        <p>Modern IT & AI solutions. Global delivery. Real outcomes.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="services.html#ai-ml">AI & ML</a></li>
+          <li><a href="services.html#mvp">MVP Development</li>
+          <li><a href="services.html#product">Product Development</a></li>
+          <li><a href="services.html#it">IT Services</a></li>
+          <li><a href="services.html#consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+10000000000">+1 000 000 0000</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footnote"><small>© <span id="year"></span> Glamified Solutions. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>
